@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site de Vídeos</title>
+    <style>
+        /* Estilos CSS básicos para o layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f44336;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .videos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .video {
+            margin: 10px;
+            flex: 0 0 calc(33.333% - 20px);
+            max-width: calc(33.333% - 20px);
+        }
+        .video img {
+            width: 100%;
+            height: auto;
+        }
+        .video h3 {
+            margin-top: 5px;
+            font-size: 16px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site de Vídeos</h1>
+    </header>
+    <nav>
+        <a href="#">Início</a> | 
+        <a href="#">Categorias</a> | 
+        <a href="#">Sobre</a>
+    </nav>
+    <div class="container">
+        <h2>Vídeos em Destaque</h2>
+        <div class="videos">
+            <!-- Aqui você pode adicionar vídeos em destaque -->
+            <div class="video">
+                <img src="https://via.placeholder.com/300x200" alt="Vídeo 1">
+                <h3>Título do Vídeo 1</h3>
+            </div>
+            <div class="video">
+                <img src="https://via.placeholder.com/300x200" alt="Vídeo 2">
+                <h3>Título do Vídeo 2</h3>
+            </div>
+            <div class="video">
+                <img src="https://via.placeholder.com/300x200" alt="Vídeo 3">
+                <h3>Título do Vídeo 3</h3>
+            </div>
+        </div>
+        <h2>Categorias</h2>
+        <ul>
+            <li><a href="#">Categoria 1</a></li>
+            <li><a href="#">Categoria 2</a></li>
+            <li><a href="#">Categoria 3</a></li>
+            <li><a href="#">Categoria 4</a></li>
+        </ul>
+    </div>
+</body>
+</html>
